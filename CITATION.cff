@@ -1,0 +1,18 @@
+
+cff-version: 1.2.0
+message: "Jeśli używasz tej teorii w swojej pracy, prosimy o cytowanie w poniższy sposób:"
+title: "Multiverse Theory: Temporal-Atemporal Quantum Topology"
+authors:
+  - family-names: TwojeNazwisko
+    given-names: TwojeImię
+    affiliation: "Niezależny badacz / Independent Researcher"
+date-released: 2025-04-12
+version: "0.1.0"
+license: MIT
+repository-code: "https://github.com/twoj-uzytkownik/multiverse-theory"
+keywords:
+  - multiverse
+  - quantum gravity
+  - white hole
+  - atemporal universe
+  - quantum cosmology
