@@ -43,3 +43,8 @@ Projekt we wczesnej fazie koncepcyjnej. Zachęcam do śledzenia rozwoju i ewentu
 
 - Kod i repozytorium: [MIT License](./LICENSE)
 - Dokumentacja: [CC-BY 4.0](./docs/CC-BY-4.0.md)
+
+
+---
+
+📡 Follow the movement: **#HackTheUniverse**

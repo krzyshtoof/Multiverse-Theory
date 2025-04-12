@@ -37,3 +37,8 @@ Contributions are welcome! See `CONTRIBUTING.md`.
 
 - Code: [MIT License](./LICENSE)
 - Documentation: [CC-BY 4.0](./docs/CC-BY-4.0.md)
+
+
+---
+
+📡 Follow the movement: **#HackTheUniverse**
