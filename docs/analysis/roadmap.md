@@ -23,3 +23,11 @@
 ## Etap 5: Współpraca naukowa i rozwój
 - [ ] Otwarcie dyskusji z innymi badaczami
 - [ ] Publikacje popularnonaukowe i akademickie
+
+
+## Etap 6: Rozszerzenie komunikacji i tożsamości
+
+- [ ] Skrypt do integracji cytatów z `fortune(6)`
+- [ ] Generator cytatów na GitHub Pages
+- [ ] Automatyczny bot publikujący cytaty (X / API / cron)
+- [ ] Banery dynamiczne z cytatami i tagiem #HackTheUniverse
