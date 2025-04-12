@@ -1,7 +1,7 @@
 
 # Draft – Theoretical Framework for Atemporal-Temporal Duality in Cosmology
 
-**Author:** [Your Name / Nickname]  
+**Author:** Krzysztof W Banasiewicz  
 **Date:** April 2025  
 **Version:** Draft 0.1
 
