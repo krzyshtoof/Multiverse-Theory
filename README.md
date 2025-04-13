@@ -7,11 +7,24 @@ Eksperymentalna, interdyscyplinarna koncepcja kwantowo-topologiczna, która zak�
 
 ## 📚 Zawartość repozytorium
 
-- `docs/` – założenia teoretyczne, modele fizyczne, przewidywania i analiza
-- `diagrams/` – wizualizacje koncepcyjne
-- `notebooks/` – przyszłe notatniki obliczeniowe i symulacyjne
-- `simulations/` – modele komputerowe i testy eksperymentalne
-- `reviews/` – opinie, pochwały i komentarze
+- `docs/` – ogólna dokumentacja, przeglądy, roadmapy, licencje
+- `models/` – formalne modele fizyczne i matematyczne teorii (np. emergencja czasu, dekoherencja)
+- `concepts/` – kluczowe koncepcje i idee podstawowe (np. funkcja falowa nici, topologia splątań)
+- `diagrams/` – wizualizacje koncepcyjne i graficzne diagramy ewolucji, przestrzeni, cykli
+- `notebooks/` – przyszłe notatniki obliczeniowe (Python, Julia, Qiskit) do testowania hipotez
+- `simulations/` – symulacje numeryczne i modele komputerowe (np. fuzja czarnych dziur)
+- `reviews/` – opinie, komentarze, pochwały, oraz cytaty w formacie `fortune`
+
+## 🔁 Zasoby i pliki specjalne
+
+- `README_EN.md` – wersja angielska
+- `CITATION.cff` – dane cytowania projektu
+- `LICENSE`, `CC-BY-4.0.md` – licencje
+- `docs/index.html` – strona GitHub Pages
+- `docs/about.txt` – skrócony opis projektu
+- `docs/logo.svg`, `logo.txt` – logo projektu
+- `reviews/fortunes` – cytaty dla `fortune(6)`
+
 
 ## 🔬 Podstawowe założenia
 
