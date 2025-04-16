@@ -1,0 +1,73 @@
+.
+├── CHANGELOG.md
+├── CITATION.cff
+├── CONTRIBUTING.md
+├── diagrams
+│   ├── conceptual_diagram.md
+│   ├── time shifted clock.PNG
+│   ├── Time Shifted Clock Virtual Qubit Relativity.PNG
+│   ├── virtual_qubit_clock.md
+│   └── virtual_qubit_clock_pl.md
+├── docs
+│   ├── about.txt
+│   ├── analysis
+│   │   ├── Analiza_teorii_Psi_connection_EN.md
+│   │   ├── Analiza_teorii_Psi_connection.md
+│   │   ├── Analysis_Psi_connection_theory.md
+│   │   ├── comparison.md
+│   │   ├── next_steps.md
+│   │   ├── roadmap.md
+│   │   ├── Ψ_connection_Theory_Academic_Article.docx
+│   │   └── Ψ_connection_Theory_Translation.docx
+│   ├── assumptions
+│   │   └── main.md
+│   ├── CC-BY-4.0.md
+│   ├── concepts
+│   │   ├── atemporal_quantum_space.md
+│   │   ├── entangled_strings.md
+│   │   ├── psi_connection.md
+│   │   ├── spacetime_entanglement_manifest.md
+│   │   ├── starting_equation.md
+│   │   ├── virtual_qubit.md
+│   │   ├── virtual_qubit_pl.md
+│   │   ├── white_hole_epistemology_EN.md
+│   │   └── white_hole_epistemology.md
+│   ├── draft_publication.md
+│   ├── index.html
+│   ├── logo.svg
+│   ├── logo.txt
+│   ├── models
+│   │   ├── emergent_time_decoherence.md
+│   │   ├── emergent_time.md
+│   │   ├── formalism.md
+│   │   ├── gravity_reinterpreted_EN.md
+│   │   ├── gravity_reinterpreted.md
+│   │   ├── psi_connection_equation.md
+│   │   ├── quantum.md
+│   │   ├── time_theory.md
+│   │   ├── topological_entanglement.md
+│   │   └── topological.md
+│   ├── philosophy
+│   │   └── implications.md
+│   ├── predictions
+│   │   └── empirical.md
+│   └── psi_connection_overview.md
+├── git_interactive.py
+├── LICENSE
+├── notebooks
+│   ├── notes.md
+│   └── pattern_QTOG.PNG
+├── predictions
+│   └── cmb_anomalies.md
+├── README_EN.md
+├── README.md
+├── reviews
+│   ├── fortunes
+│   ├── praise_and_feedback.md
+│   └── psi_connection_analysis.md
+├── simulations
+├── tools
+├── tree.txt
+└── unity_and_information.md
+
+14 directories, 57 files
