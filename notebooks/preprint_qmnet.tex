@@ -1,0 +1,150 @@
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{authblk}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{\textbf{Sieć Splątania Kwantowego jako Fundament Multiwersum:\\
+Nowy Paradygmat Czasu Relacyjnego i Napędu}}
+
+\author[1]{Krzysztof W\l{}odzimierz Banasiewicz}
+\affil[1]{\small Independent Researcher, The Hague, Netherlands}
+\date{29 sierpnia 2025}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Proponujemy hipotezę, zgodnie z którą fundamentalną strukturą rzeczywistości jest globalna sieć splątania kwantowego spinająca wielość gałęzi (światów) w sensie interpretacji wielu światów. Wprowadzamy pojęcie Jednostek Przyczynowo--Kontrolnych (CCU) jako elementarnych generatorów korelacji, z których emergentnie wyłaniają się: (i) czasoprzestrzeń jako skuteczny opis makroskopowy, (ii) relacyjny czas rozumiany jako porządek przyczynowy zdarzeń oraz (iii) procesy poznawcze obserwatorów. Proponujemy fenomenologiczny formalizm dynamiki sieci, obejmujący operator \emph{mostu relacyjnego}, który modyfikuje lokalną strukturę przyczynową poprzez dodawanie połączeń splątania i efektywne skracanie interwałów czasowych w grafie przyczynowym. Pokazujemy, w jaki sposób dodatkowy wkład tensora energii--pędu pochodzący od CCU może być traktowany jako źródło w równaniach Einsteina, w ścisłym sensie efektywnej teorii pola. Zarysowujemy program badań składający się z: (i) symulacji dużych grafów przyczynowych, (ii) eksperymentów na procesorach kwantowych będących analogową symulacją postulowanej dynamiki (\emph{proof-of-concept}) oraz (iii) analiz astrofizycznych korelacji. Hipoteza ta wpisuje się w nurt traktujący splątanie jako ``klej przestrzeni'' i łączy idee holograficzne/ER=EPR z dyskretnymi modelami przyczynowymi. Potencjalne implikacje obejmują nowe algorytmy kwantowe, komunikację opartą na korelacjach oraz koncepcję \emph{napędu relacyjnego}, który nie wymaga translacji w przestrzeni, lecz rekonfiguracji relacji przyczynowych. \textbf{Na tym etapie model jest spekulatywny}; celem pracy jest sformułowanie spójnego formalizmu i wskazanie testowalnych przewidywań. % [1--8]
+\end{abstract}
+
+\section{Wprowadzenie: zało\.zenia i motywacje}
+Unifikacja mechaniki kwantowej i ogólnej teorii względności pozostaje otwartym wyzwaniem. Rosnąca liczba prac sugeruje, że \emph{splątanie} odgrywa kluczową rolę w budowaniu geometrii i grawitacji efektywnej, co bywa ujmowane metaforą ``kleju przestrzeni'' \cite{Preskill2018,VanRaamsdonk2010,Swingle2012,MaldacenaSusskind2013}. W tej pracy proponujemy hipotezę, w której globalna sieć splątania stanowi prymarną strukturę rzeczywistości, a czasoprzestrzeń jest opisem efektywnym rekonstruowanym z porządku przyczynowego i korelacji.
+
+Wprowadzamy Jednostki Przyczynowo--Kontrolne (CCU) jako węzły sieci korelacji. Z naszego punktu widzenia, obserwatorzy są szczególnym podzbiorem CCU, których dynamika związana jest z procesami decyzyjnymi i akwizycją informacji. Przyjmujemy \emph{relacyjną} koncepcję czasu: czas to porządek na zbiorze zdarzeń, a nie absolutna zmienna globalna \cite{Rovelli2004}. W duchu idei ER=EPR \cite{MaldacenaSusskind2013} oraz konstrukcji holograficznych, nowe połączenia splątania mogą mieć interpretację geometryczną jako skracanie efektywnych odległości w sensie przyczynowym.
+
+\section{Architektura hipotezy: CCU i sie\'c splątania}
+Niech $E$ oznacza zbiór zdarzeń z relacją przyczynową $\prec$. Para $(E,\prec)$ tworzy skierowany graf acykliczny (DAG) w sensie teorii zbiorów przyczynowych \cite{Sorkin2003}. Węzły (zdarzenia) zgrupowane w CCU pełnią rolę elementarnych generatorów korelacji kwantowych.
+
+Stan CCU traktujemy fenomenologicznie jako superpozycję konfiguracji pól i zasobów splątania
+\begin{equation}
+\ket{\Psi_{\mathrm{CCU}}} \;=\; \int \mathcal{D}\phi\, e^{i S[\phi]}\, \otimes\, \ket{\mathrm{Ent}},
+\end{equation}
+gdzie $\ket{\mathrm{Ent}}$ reprezentuje strukturę splątania międzywęzłowego (nie zakładamy tu konkretnej reprezentacji; obiekt ten pełni rolę \emph{zasobu} informacyjnego). Dynamika CCU prowadzi do powstawania/zanikania krawędzi w grafie $\,(E,\prec)\,$ oraz rozdzielania się (branchingu) gałęzi w sensie interpretacji wielu światów \cite{Everett1957}.
+
+\section{Formalizm: przestrzenie Hilberta i most relacyjny}
+Każdej krawędzi $x\!\to\!y$ przypisujemy lokalną przestrzeń Hilberta $\mathcal{H}_{xy}$ z efektywnym hamiltonianem interakcji $H_{xy}$. Globalna przestrzeń stanów ma zatem strukturę
+\begin{equation}
+\mathcal{H} \;=\; \bigotimes_{x\to y} \mathcal{H}_{xy}\,.
+\end{equation}
+Wprowadzamy operator \emph{mostu relacyjnego} działający na wybranym zbiorze par $\mathcal{P}\subset E\times E$:
+\begin{equation}
+B_{\Delta L \to \Delta T}(\lambda) \;=\; \exp\!\left(i\,\lambda \sum_{(u,v)\in \mathcal{P}} \hat{b}_{uv}\right),
+\end{equation}
+gdzie $\hat{b}_{uv}$ jest operatorem tworzącym (lub wzmacniającym) korelacje splątania między $u$ i $v$, a $\lambda$ jest \emph{parametrem fenomenologicznym}. Intuicyjnie można interpretować $\lambda$ jako miarę \emph{kosztu informacyjnego/energii} koniecznej do ustanowienia połączenia. Na obecnym etapie nie przypisujemy mu jednoznacznego znaczenia mikrofizycznego; jego identyfikacja eksperymentalna/operacyjna stanowi otwarty problem badawczy.
+
+Wkład CCU do grawitacji opisujemy efektywnie przez dodatkowy tensor energii--pędu w równaniach pola:
+\begin{equation}
+R_{\mu\nu} - \tfrac{1}{2} g_{\mu\nu} R \;=\; \frac{8\pi G}{c^4}\,\Big(T^{\mathrm{(m)}}_{\mu\nu} + T^{\mathrm{(CCU)}}_{\mu\nu}\Big).
+\end{equation}
+Proponujemy traktować $T^{\mathrm{(CCU)}}_{\mu\nu}$ jako fenomenologiczną funkcję lokalnej gęstości splątania. Przykładowy ansatz (spełniający kowariancję i zachowanie energii--pędu) ma postać
+\begin{equation}
+T^{\mathrm{(CCU)}}_{\mu\nu} \;=\; \alpha\, \nabla_{\mu}\eta\, \nabla_{\nu}\eta \;-\; g_{\mu\nu}\,V(\eta), \qquad
+\eta \equiv f\big(S_{\mathrm{ent}}\big),
+\end{equation}
+gdzie $S_{\mathrm{ent}}$ to lokalna entropia splątania (lub gęstość korelacji), $f$ --- funkcja monotoniczna, a $V$ --- efektywny potencjał. \emph{Wyznaczenie $f$ i $V$ jest otwartym problemem}.
+
+\paragraph{Relacyjna metryka i odległość przyczynowa.}
+W warstwie operacyjnej definiujemy relacyjną odległość między zdarzeniami jako funkcję zasobu splątania: $L(u,v)\!\equiv\!L\big(S_{\mathrm{ent}}(u{:}v)\big)$, przy czym $L$ maleje ze wzrostem korelacji. Działanie $B_{\Delta L \to \Delta T}$ redukuje ścieżkową długość łańcuchów przyczynowych, co efektywnie skraca czasy właściwe na trajektoriach w grafie. Nie implikuje to naruszenia zasady braku sygnalizacji: zmienia się \emph{struktura przyczynowa} modelu, a nie możliwość superluminalnego przesyłu informacji w danej, ustalonej strukturze.
+
+\section{Paradoksy i problemy pojęciowe}
+\textbf{Nielokalność.} W ujęciu sieciowym splątane węzły są sąsiadami w sensie relacji \emph{przyczynowo--informacyjnej}, co eliminuje intuicyjny paradoks ``działania na odległość'' (por. ER=EPR) \cite{MaldacenaSusskind2013}.
+
+\textbf{Fine--tuning stałych.} Parametry efektywnej teorii mogą wynikać z globalnej optymalizacji funkcjonału sieciowego (np. minimalizacji kosztu informacyjnego przy zachowaniu stabilności), co dostarcza alternatywy dla precyzyjnego dostrojenia.
+
+\textbf{Rola obserwatora.} Obserwator jako CCU wpływa na rozgałęzienia poprzez wybór operacji pomiarowych i kontroli zasobów splątania; jest to zgodne z relacyjną interpretacją stanów \cite{Rovelli2004,Everett1957}.
+
+\section{Program bada\'n i test\'ow}
+\subsection*{(A) Symulacje graf\'ow przyczynowych}
+\begin{itemize}[nosep]
+\item Generowanie dużych DAG ($|E|\sim 10^6$) z zadanym rozkładem stopni i rule--setem dla tworzenia krawędzi.
+\item Badanie wpływu operatora $B_{\Delta L \to \Delta T}$ na rozkłady długości łańcuchów przyczynowych, średnicę grafu i pojawianie się praw efektywnych.
+\item Estymacja funkcjonalnej zależności $L\big(S_{\mathrm{ent}}\big)$ metodami uczenia reprezentacji.
+\end{itemize}
+
+\subsection*{(B) Eksperymenty kwantowe (symulacja analogowa)}
+\begin{itemize}[nosep]
+\item Implementacja $\hat{b}_{uv}$ jako wielokubitowych bramek entanglujących na NISQ/FTQC.
+\item Pomiary entropii splątania, redukcji głębokości obwodu i przyspieszeń w metryce kompresji obliczeniowej.
+\item Wyniki interpretujemy jako \emph{dowód koncepcji} postulowanej dynamiki w kontrolowanym układzie, a \emph{nie} dosłowną realizację mostu czasoprzestrzennego.
+\end{itemize}
+
+\subsection*{(C) Dane astrofizyczne i kosmologiczne}
+\begin{itemize}[nosep]
+\item Poszukiwanie anomalii korelacyjnych (np. w CMB, rozkładach kwazarów) interpretowalnych jako ślad globalnych struktur korelacyjnych.
+\item Analiza ograniczeń obserwacyjnych na ewentualny wkład $T^{\mathrm{(CCU)}}_{\mu\nu}$ do dynamiki kosmologicznej.
+\end{itemize}
+
+\section{Implikacje i zastosowania}
+\textbf{Czas relacyjny.} Czas wyłania się jako lokalny porządek zdarzeń, co naturalnie łączy dynamikę kwantową i grawitacyjną w opisie efektywnym.
+
+\textbf{Napęd relacyjny.} Zamiast translacji w przestrzeni, postulujemy możliwość rekonstrukcji ścieżki przyczynowej przez modyfikację połączeń splątania (\emph{rekonfiguracja grafu}). W sensie operacyjnym odpowiada to skracaniu \emph{odległości przyczynowej} między stanem początkowym a docelowym, przy zachowaniu braku sygnalizacji.
+
+\textbf{Informatyka kwantowa.} Mosty relacyjne mogą mieć interpretację jako protokoły \emph{zasobooszczędnego} przesiewania korelacji, potencjalnie prowadząc do nowych klas algorytmów i kompresji obliczeń.
+
+\section{Status, ograniczenia i dalsze kroki}
+Przedstawiony formalizm ma charakter \emph{hipotetyczny}. Kluczowe wyzwania obejmują:
+\begin{itemize}[nosep]
+\item wyprowadzenie mikrofizycznej interpretacji parametru $\lambda$,
+\item określenie operacyjnej definicji $S_{\mathrm{ent}}$ w warunkach kosmologicznych,
+\item konstrukcję dobrze określonych równań ruchu dla pola $\eta$ i potencjału $V$,
+\item wskazanie obserwabli odróżniających model od standardowych paradygmatów.
+\end{itemize}
+Planowane działania: implementacje symulacyjne, eksperymenty PoC na procesorach kwantowych, metaanalizy danych astrofizycznych.
+
+\section{Wnioski}
+Zarysowaliśmy spójny, choć fenomenologiczny, program badawczy, w którym splątanie pełni rolę konstytutywną dla struktury przyczynowej i efektywnej geometrii. Zaproponowany operator mostu relacyjnego oraz ansatz na $T^{\mathrm{(CCU)}}_{\mu\nu}$ tworzą ramę do formułowania testowalnych przewidywań. Niezależnie od ostatecznej weryfikacji, hipoteza ta oferuje jednolite ujęcie kilku pozornie odrębnych zjawisk: nielokalności, emergencji czasu i możliwej inżynierii relacyjnej (\emph{napędu relacyjnego}).
+
+\section*{Podzi\k{e}kowania}
+Autor dziękuje społeczności badawczej za dyskusje nad rolą splątania w geometrii i grawitacji oraz recenzentom nieformalnym za krytyczne uwagi.
+
+\begin{thebibliography}{99}
+
+\bibitem{Preskill2018}
+J.~Preskill, ``Entanglement and the Nature of Space,'' \emph{Caltech Magazine}, 2018.
+
+\bibitem{Everett1957}
+H.~Everett, ``\textit{Relative State} Formulation of Quantum Mechanics,'' \emph{Reviews of Modern Physics} \textbf{29}, 454--462 (1957).
+
+\bibitem{MaldacenaSusskind2013}
+J.~Maldacena, L.~Susskind, ``Cool horizons for entangled black holes,'' \emph{Fortschritte der Physik} \textbf{61}, 781--811 (2013).
+
+\bibitem{Rovelli2004}
+C.~Rovelli, \emph{Quantum Gravity}, Cambridge University Press (2004).
+
+\bibitem{Hawking1975}
+S.~W.~Hawking, ``Particle Creation by Black Holes,'' \emph{Communications in Mathematical Physics} \textbf{43}, 199--220 (1975).
+
+\bibitem{VanRaamsdonk2010}
+M.~van Raamsdonk, ``Building up spacetime with quantum entanglement,'' \emph{General Relativity and Gravitation} \textbf{42}, 2323--2329 (2010).
+
+\bibitem{Swingle2012}
+B.~Swingle, ``Entanglement renormalization and holography,'' \emph{Phys. Rev. D} \textbf{86}, 065007 (2012).
+
+\bibitem{Sorkin2003}
+R.~D.~Sorkin, ``Causal Sets: Discrete Gravity,'' \emph{Lectures on Quantum Gravity} (2005); arXiv:gr-qc/0309009.
+
+\end{thebibliography}
+
+\end{document}
