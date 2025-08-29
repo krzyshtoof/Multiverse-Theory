@@ -1,18 +1,20 @@
-
 cff-version: 1.2.0
-message: "Jeśli używasz tej teorii w swojej pracy, prosimy o cytowanie w poniższy sposób:"
-title: "Multiverse Theory: Temporal-Atemporal Quantum Topology"
+title: "Multiverse Theory — QMNET"
+message: "If you use this work, please cite it as below."
+type: software
 authors:
-  - family-names: TwojeNazwisko
-    given-names: TwojeImię
-    affiliation: "Niezależny badacz / Independent Researcher"
-date-released: 2025-04-12
-version: "0.1.0"
+  - family-names: Banasiewicz
+    given-names: Krzysztof Włodzimierz
+repository-code: "https://github.com/krzyshtoof/Multiverse-Theory"
+keywords: [quantum gravity, entanglement, relational time, multiverse, QMNET, HackTheUniverse]
 license: MIT
-repository-code: "https://github.com/twoj-uzytkownik/multiverse-theory"
-keywords:
-  - multiverse
-  - quantum gravity
-  - white hole
-  - atemporal universe
-  - quantum cosmology
+license-url: "https://opensource.org/licenses/MIT"
+url: "https://github.com/krzyshtoof/Multiverse-Theory"
+preferred-citation:
+  type: article
+  title: "Quantum Entanglement Network as the Substrate of the Multiverse"
+  authors:
+    - family-names: Banasiewicz
+      given-names: Krzysztof Włodzimierz
+  year: 2025
+  notes: "Preprint; Zenodo DOI and arXiv ID to be added after release."

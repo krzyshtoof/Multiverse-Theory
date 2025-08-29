@@ -1,0 +1,12 @@
+
+# Ignore Python and Jupyter files
+__pycache__/
+*.pyc
+*.ipynb_checkpoints
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore build artifacts
+*.zip

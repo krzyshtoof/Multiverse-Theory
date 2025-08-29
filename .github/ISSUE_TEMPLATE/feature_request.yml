@@ -1,0 +1,8 @@
+name: Feature request
+description: Propozycja funkcji
+labels: [enhancement]
+body:
+  - type: textarea
+    id: value
+    attributes:
+      label: Wartość/uzasadnienie

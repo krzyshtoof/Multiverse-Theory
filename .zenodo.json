@@ -1,0 +1,23 @@
+{
+  "title": "Multiverse Theory — QMNET",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {
+      "name": "Banasiewicz, Krzysztof Włodzimierz",
+      "affiliation": "Independent Researcher, The Hague, Netherlands"
+    }
+  ],
+  "description": "A quantum-topological framework proposing an entanglement substrate for a relational notion of time and a prospective 'relational drive'.",
+  "keywords": ["quantum gravity", "entanglement", "relational time", "multiverse", "QMNET", "HackTheUniverse"],
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/krzyshtoof/Multiverse-Theory",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Docs and figures are CC BY 4.0; code is MIT.",
+  "access_right": "open"
+}

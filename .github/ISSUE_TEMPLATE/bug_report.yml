@@ -1,0 +1,13 @@
+name: Bug report
+description: Zgłoszenie błędu
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Opis problemu
+      description: Co się dzieje? Jak to odtworzyć?
+  - type: input
+    id: commit
+    attributes:
+      label: Commit/Tag
