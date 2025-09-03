@@ -1,0 +1,84 @@
+# .github/workflows/latex-preprint.yml
+name: Build LaTeX Preprints (fast)
+
+on:
+  push:
+    paths:
+      - "preprints/**/*.tex"
+      - ".github/workflows/latex-preprint.yml"
+      - ".latexmkrc"
+  workflow_dispatch: {}
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    name: Build PDFs
+    runs-on: ubuntu-latest
+    # Gotowy obraz z pełnym TeX Live -> bez instalacji na każdym runie
+    container: texlive/texlive:latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Cache plików pomocniczych (aux, fls, fdb_latexmk, etc.)
+      - name: Cache latexmk aux
+        uses: actions/cache@v4
+        with:
+          path: |
+            preprints/**/.latexmk
+            preprints/**/*.aux
+            preprints/**/*.fdb_latexmk
+            preprints/**/*.fls
+            preprints/**/*.toc
+            preprints/**/*.out
+            preprints/**/*.bbl
+            preprints/**/*.blg
+          key: latexmk-${{ runner.os }}-${{ hashFiles('preprints/**/*.tex', '.latexmkrc') }}
+          restore-keys: |
+            latexmk-${{ runner.os }}-
+
+      - name: Build all .tex with latexmk
+        shell: bash
+        run: |
+          set -e
+          shopt -s nullglob
+          for f in preprints/*.tex; do
+            echo ">> Building $f"
+            latexmk -pdf -shell-escape -interaction=nonstopmode "$f"
+          done
+
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: preprints-pdf
+          path: preprints/**/*.pdf
+          if-no-files-found: error
+
+  release:
+    name: Release on tag
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download PDFs from build
+        uses: actions/download-artifact@v4
+        with:
+          name: preprints-pdf
+          path: dist
+
+      - name: Create GitHub Release and upload PDFs
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/**/*.pdf
+          draft: false
+          prerelease: false
+
