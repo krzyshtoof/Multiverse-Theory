@@ -1,0 +1,47 @@
+Aby obliczyć, czy „uwolniony” sygnał światłowodowy dotarłby do nas z odległości Proxima Centauri b (4,24 lata świetlne), najpierw trzeba ustalić kilka kwestii związanych z fizyką fali elektromagnetycznej i technologią transmisji sygnałów.
+
+W światłowodach sygnały podróżują jako fale świetlne lub podczerwone wewnątrz szklanego przewodnika, gdzie są prowadzone za pomocą zjawiska całkowitego wewnętrznego odbicia. Jednak w przestrzeni kosmicznej nie mamy światłowodów, a sygnał musiałby być przesyłany bezprzewodowo, jako fala elektromagnetyczna (np. radiowa, mikrofalowa, optyczna), co znacznie zmienia sytuację.
+
+### Kluczowe czynniki wpływające na odbiór sygnału z takiej odległości:
+1. **Dyfrakcja i rozpraszanie**: W próżni kosmicznej fale elektromagnetyczne mogą ulegać rozpraszaniu i dyfrakcji, co powoduje osłabienie sygnału wraz z odległością.
+   
+2. **Zanik sygnału z odległością (straty propagacyjne)**: Moc sygnału maleje proporcjonalnie do kwadratu odległości – zgodnie z prawem odwrotnych kwadratów. Oznacza to, że sygnał staje się znacznie słabszy w miarę oddalania się od źródła.
+
+### Szacowanie strat sygnału z Proxima Centauri b
+
+Jeżeli spróbujemy przesłać sygnał o częstotliwości światłowodowej (zakładam np. typową długość fali światłowodu – 1550 nm, czyli bliską podczerwień), obliczmy stratę mocy sygnału na tej odległości. Zakładając prosty model rozprzestrzeniania się sygnału w przestrzeni kosmicznej, możemy obliczyć stratę propagacyjną za pomocą wzoru:
+
+\[
+L = 20 \log_{10} \left( \frac{4 \pi d}{\lambda} \right)
+\]
+
+Gdzie:
+- \( L \) to strata sygnału w decybelach (dB),
+- \( d \) to odległość do Proxima Centauri b w metrach,
+- \( \lambda \) to długość fali sygnału (w metrach).
+
+Zakładając, że odległość wynosi **4,24 lata świetlne**:
+- 1 rok świetlny = \( 9,461 \times 10^{15} \) metrów,
+- więc odległość \( d = 4,24 \times 9,461 \times 10^{15} = 4,01 \times 10^{16} \) metrów.
+
+Długość fali światłowodowej (np. 1550 nm) to:
+
+\[
+\lambda = 1,55 \times 10^{-6} \, \text{m}
+\]
+
+Teraz możemy obliczyć stratę propagacyjną:
+
+\[
+L = 20 \log_{10} \left( \frac{4 \pi \times 4,01 \times 10^{16}}{1,55 \times 10^{-6}} \right)
+\]
+
+Policzmy to teraz.
+
+Strata sygnału przy transmisji fali o długości 1550 nm z odległości Proxima Centauri b wynosi około **470 dB**.
+
+### Interpretacja:
+
+Strata 470 dB jest ogromna. Dla porównania, w systemach telekomunikacyjnych typowe straty na dużych odległościach (kilkaset kilometrów) mogą wynosić kilkadziesiąt dB, co wymaga wzmacniaczy sygnału co jakiś dystans. Przy stracie 470 dB, sygnał byłby praktycznie niemożliwy do odebrania przy dzisiejszych technologiach bez bardzo zaawansowanych wzmacniaczy lub anten odbiorczych o ogromnej czułości.
+
+Z tego wynika, że "uwolniony" sygnał światłowodowy, gdyby został przesłany w przestrzeń kosmiczną, praktycznie nie dotarłby do nas w całości z tej odległości, przynajmniej przy obecnym stanie technologii.
